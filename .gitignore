@@ -1,0 +1,3 @@
+data/input_data/snli_1.0_train.jsonl
+data/input_data/snli_1.0_dev.jsonl
+data/input_data/snli_1.0_test.jsonl
