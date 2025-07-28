@@ -1,3 +1,6 @@
-data/input_data/snli_1.0_train.jsonl
-data/input_data/snli_1.0_dev.jsonl
-data/input_data/snli_1.0_test.jsonl
+data/input_data/
+code/baseline_model_(1) (1).ipynb
+code/Baseline_model.ipynb
+code/baseline_model.py
+code/EDA.ipynb
+code/text_entailment__util/__pycache__/
