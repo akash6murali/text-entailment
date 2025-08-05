@@ -15,15 +15,20 @@ def logistic_regression(
     max_iter = 1000
 ):
 
-    logger_msg("--- Logistic Regression Results ---")
-    classifier = LogisticRegression(max_iter=1000)
-    classifier.fit(X_train, y_train)
+    try:
+        logger_msg("--- Logistic Regression Results ---")
+        classifier = LogisticRegression(max_iter=1000)
+        classifier.fit(X_train, y_train)
 
-    # Predict on the test set
-    y_pred = classifier.predict(X_test)
+        # Predict on the test set
+        y_pred = classifier.predict(X_test)
 
-    # Evaluate the model
-    logger_msg(classification_report(y_test, y_pred))
+        # Evaluate the model
+        logger_msg(classification_report(y_test, y_pred))
+
+    except Exception as e:
+
+        logger_msg("Baseline Models | Logistic Regression | Error in the code.")
 
     return None
 
@@ -36,16 +41,21 @@ def svm(
     kernel='linear'
 ):
 
-    logger_msg("--- Logistic Regression Results ---")
-    classifier = SVC(kernel=kernel)
-    classifier.fit(X_train, y_train)
+    try:
+        logger_msg("--- SVM Results ---")
+        classifier = SVC(kernel=kernel)
+        classifier.fit(X_train, y_train)
 
-    # Predict on the test set
-    y_pred = classifier.predict(X_test)
+        # Predict on the test set
+        y_pred = classifier.predict(X_test)
 
-    # Evaluate the model
-    logger_msg(classification_report(y_test, y_pred))
+        # Evaluate the model
+        logger_msg(classification_report(y_test, y_pred))
 
+    except Exception as e:
+
+        logger_msg("Baseline Models | SVM | Error in the code.")
+    
     return None
 
 
@@ -58,14 +68,19 @@ def random_forest(
     random_state=42
 ):
 
-    logger_msg("--- Logistic Regression Results ---")
-    classifier = RandomForestClassifier(n_estimators=100, random_state=42)
-    classifier.fit(X_train, y_train)
+    try:
+        logger_msg("--- Random Forest Results ---")
+        classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+        classifier.fit(X_train, y_train)
 
-    # Predict on the test set
-    y_pred = classifier.predict(X_test)
+        # Predict on the test set
+        y_pred = classifier.predict(X_test)
 
-    # Evaluate the model
-    logger_msg(classification_report(y_test, y_pred))
+        # Evaluate the model
+        logger_msg(classification_report(y_test, y_pred))
+
+    except Exception as e:
+
+        logger_msg("Baseline Models | Random Forest | Error in the code.")
 
     return None
