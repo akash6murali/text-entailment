@@ -1,0 +1,41 @@
+[2025-07-28 09:36:37] INFO: Initated Log file successfully.
+[2025-07-28 09:36:37] INFO: Main script is running.
+[2025-07-28 09:36:37] INFO: Pre-processing has started.
+[2025-07-28 09:42:36] INFO: Pre-processing is completed.
+[2025-07-28 09:42:36] INFO: This is the sample of the dataframe.
+[2025-07-28 09:42:36] INFO:   annotator_labels         captionID     true label  ...                                    sentence2_parse                                       Fact                                hypothesis
+0        [neutral]  3416050480.jpg#4        neutral  ...  (ROOT (S (NP (DT A) (NN person)) (VP (VBZ is) ...  [[person, horse, jump, broken, airplane]]  [[person, training, horse, competition]]
+1  [contradiction]  3416050480.jpg#4  contradiction  ...  (ROOT (S (NP (DT A) (NN person)) (VP (VBZ is) ...  [[person, horse, jump, broken, airplane]]     [[person, diner, ordering, omelette]]
+2     [entailment]  3416050480.jpg#4     entailment  ...  (ROOT (S (NP (DT A) (NN person)) (VP (VBZ is) ...  [[person, horse, jump, broken, airplane]]               [[person, outdoors, horse]]
+3        [neutral]  2267923837.jpg#2        neutral  ...  (ROOT (S (NP (PRP They)) (VP (VBP are) (VP (VB...         [[child, smiling, waving, camera]]                       [[smiling, parent]]
+4     [entailment]  2267923837.jpg#2     entailment  ...  (ROOT (S (NP (EX There)) (VP (VBP are) (NP (NN...         [[child, smiling, waving, camera]]                        [[child, present]]
+
+[5 rows x 12 columns]
+[2025-07-28 09:42:37] INFO: Data Prep has started.
+[2025-07-28 09:48:28] INFO: Data Prep has completed.
+[2025-07-28 09:48:28] INFO: Running baseline models.
+[2025-07-28 09:48:28] INFO: --- Logistic Regression Results ---
+[2025-07-28 09:49:03] INFO:                precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       163
+contradiction       0.53      0.49      0.51     36513
+   entailment       0.54      0.59      0.57     36887
+      neutral       0.54      0.53      0.53     36468
+
+     accuracy                           0.54    110031
+    macro avg       0.40      0.40      0.40    110031
+ weighted avg       0.54      0.54      0.54    110031
+
+[2025-07-28 09:49:03] INFO: --- Random Forest Results ---
+[2025-07-28 10:36:19] INFO:                precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       163
+contradiction       0.62      0.60      0.61     36513
+   entailment       0.59      0.64      0.61     36887
+      neutral       0.58      0.55      0.56     36468
+
+     accuracy                           0.60    110031
+    macro avg       0.45      0.45      0.45    110031
+ weighted avg       0.59      0.60      0.59    110031
+
+[2025-07-28 10:36:19] INFO: --- SVM Results ---
