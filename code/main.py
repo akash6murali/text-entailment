@@ -23,12 +23,12 @@ if __name__ == "__main__":
 
     preprocessed_df = preprocessing(file_path)
 
-    # X_train, X_test, y_train, y_test = data_prep(preprocessed_df)
+    X_train, X_test, y_train, y_test = data_prep(preprocessed_df)
 
-    # logger_msg("Running baseline models.")
-    # logistic_regression(X_train, X_test, y_train, y_test)
+    logger_msg("Running baseline models.")
+    logistic_regression(X_train, X_test, y_train, y_test)
 
-    # random_forest(X_train, X_test, y_train, y_test)
+    random_forest(X_train, X_test, y_train, y_test)
 
     # svm(X_train, X_test, y_train, y_test)
 

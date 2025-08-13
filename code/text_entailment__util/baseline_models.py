@@ -6,6 +6,19 @@ from sklearn.metrics import classification_report
 from text_entailment__util.project_log import logger_msg
 
 
+from sklearn.metrics import confusion_matrix, roc_auc_score
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def plot_confusion_matrix(y_true, y_pred, model_name):
+    cm = confusion_matrix(y_true, y_pred)
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", cbar=False)
+    plt.xlabel('Predicted Label', fontsize=12)
+    plt.ylabel('True Label', fontsize=12)
+    plt.tight_layout()
+    plt.savefig(f"{model_name}_confusion_matrix.png", dpi=300, bbox_inches='tight')
+    plt.show()
 
 def logistic_regression(
     X_train,
@@ -24,7 +37,11 @@ def logistic_regression(
         y_pred = classifier.predict(X_test)
 
         # Evaluate the model
+        auc = roc_auc_score(y_test, y_pred)
+        logger_msg(f"ROC AUC Score (OvR): {auc:.4f}")
         logger_msg(classification_report(y_test, y_pred))
+
+        plot_confusion_matrix(y_test, y_pred, "Logistic Regression")
 
     except Exception as e:
 
@@ -50,7 +67,11 @@ def svm(
         y_pred = classifier.predict(X_test)
 
         # Evaluate the model
+        auc = roc_auc_score(y_test, y_pred)
+        logger_msg(f"ROC AUC Score (OvR): {auc:.4f}")
         logger_msg(classification_report(y_test, y_pred))
+
+        plot_confusion_matrix(y_test, y_pred, "Logistic Regression")
 
     except Exception as e:
 
@@ -77,7 +98,12 @@ def random_forest(
         y_pred = classifier.predict(X_test)
 
         # Evaluate the model
+        auc = roc_auc_score(y_test, y_pred)
+        logger_msg(f"ROC AUC Score (OvR): {auc:.4f}")
+        
         logger_msg(classification_report(y_test, y_pred))
+
+        plot_confusion_matrix(y_test, y_pred, "Logistic Regression")
 
     except Exception as e:
 
