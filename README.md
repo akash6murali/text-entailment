@@ -1,4 +1,4 @@
-# Text Entailment (Natural Language Inference) Project
+# Text Entailment Project
 
 A comprehensive machine learning project for text entailment classification, implementing multiple approaches from baseline models to advanced neural architectures.
 
