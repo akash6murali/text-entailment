@@ -1,8 +1,3 @@
 data/input_data/
-code/baseline_model_(1) (1).ipynb
-code/Baseline_model.ipynb
-code/baseline_model.py
-code/EDA.ipynb
 code/text_entailment__util/__pycache__/
-data/process_datapreprocessing22__20250728175608.csv
-data/process_datapreprocessing_20250728175608.csv
+data/process_data/
