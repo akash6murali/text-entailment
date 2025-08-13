@@ -268,7 +268,6 @@ For questions or issues:
 1. Check the existing documentation
 2. Review the code comments
 3. Open an issue on the repository
-4. Contact the development team
 
 ---
 
