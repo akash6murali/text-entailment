@@ -1,0 +1,10 @@
+datetime
+nltk
+gensim
+pandas
+numpy
+scikit-learn
+logging
+tensorflow
+matplotlib
+seaborn
