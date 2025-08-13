@@ -1,0 +1,67 @@
+[2025-08-12 15:06:25] INFO: Initated Log file successfully.
+[2025-08-12 15:06:25] INFO: Main script is running.
+[2025-08-12 15:06:25] INFO: Pre-processing has started.
+[2025-08-12 15:09:11] INFO: Pre-processing is completed.
+[2025-08-12 15:09:11] INFO: This is the sample of the dataframe.
+[2025-08-12 15:09:11] INFO:   annotator_labels         captionID  ...                                       Fact                                hypothesis
+0        [neutral]  3416050480.jpg#4  ...  [[person, horse, jump, broken, airplane]]  [[person, training, horse, competition]]
+1  [contradiction]  3416050480.jpg#4  ...  [[person, horse, jump, broken, airplane]]     [[person, diner, ordering, omelette]]
+2     [entailment]  3416050480.jpg#4  ...  [[person, horse, jump, broken, airplane]]               [[person, outdoors, horse]]
+3        [neutral]  2267923837.jpg#2  ...         [[child, smiling, waving, camera]]                       [[smiling, parent]]
+4     [entailment]  2267923837.jpg#2  ...         [[child, smiling, waving, camera]]                        [[child, present]]
+
+[5 rows x 12 columns]
+[2025-08-12 15:54:41] INFO: Data Prep has started.
+[2025-08-12 15:59:07] INFO: Data Prep has completed.
+[2025-08-12 15:59:08] INFO: Running baseline models.
+[2025-08-12 15:59:08] INFO: --- Logistic Regression Results ---
+[2025-08-12 15:59:38] INFO:                precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       163
+contradiction       0.52      0.49      0.51     36513
+   entailment       0.54      0.59      0.57     36887
+      neutral       0.54      0.53      0.53     36468
+
+     accuracy                           0.53    110031
+    macro avg       0.40      0.40      0.40    110031
+ weighted avg       0.53      0.53      0.53    110031
+
+[2025-08-12 16:05:32] INFO: Running baseline models.
+[2025-08-12 16:05:33] INFO: --- Logistic Regression Results ---
+[2025-08-12 16:05:33] INFO: Baseline Models | Logistic Regression | Error in the code.
+[2025-08-12 16:05:57] INFO: --- Logistic Regression Results ---
+[2025-08-12 16:06:37] INFO: --- Logistic Regression Results ---
+[2025-08-12 16:07:53] INFO:                precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       163
+contradiction       0.52      0.49      0.51     36513
+   entailment       0.54      0.59      0.57     36887
+      neutral       0.54      0.53      0.53     36468
+
+     accuracy                           0.53    110031
+    macro avg       0.40      0.40      0.40    110031
+ weighted avg       0.53      0.53      0.53    110031
+
+[2025-08-12 16:08:24] INFO:                precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       163
+contradiction       0.52      0.49      0.51     36513
+   entailment       0.54      0.59      0.57     36887
+      neutral       0.54      0.53      0.53     36468
+
+     accuracy                           0.53    110031
+    macro avg       0.40      0.40      0.40    110031
+ weighted avg       0.53      0.53      0.53    110031
+
+[2025-08-12 16:13:02] INFO: --- Random Forest Results ---
+[2025-08-12 16:38:37] INFO:                precision    recall  f1-score   support
+
+            -       0.00      0.00      0.00       163
+contradiction       0.62      0.60      0.61     36513
+   entailment       0.59      0.64      0.61     36887
+      neutral       0.58      0.55      0.56     36468
+
+     accuracy                           0.60    110031
+    macro avg       0.45      0.45      0.45    110031
+ weighted avg       0.59      0.60      0.59    110031
+

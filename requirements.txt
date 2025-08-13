@@ -1,0 +1,49 @@
+datetime
+nltk
+gensim
+pandas
+numpy
+scikit-learn
+logging
+tensorflow
+matplotlib
+seaborn
+
+# Core ML and NLP libraries
+torch>=1.12.0
+transformers>=4.20.0
+tokenizers>=0.12.0
+datasets>=2.0.0
+
+# Data processing and manipulation
+pandas>=1.5.0
+numpy>=1.21.0
+scikit-learn>=1.1.0
+
+# Visualization and plotting
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# Progress bars and utilities
+tqdm>=4.64.0
+wandb>=0.13.0  # For experiment tracking (optional)
+
+# Text processing
+nltk>=3.7
+spacy>=3.4.0
+
+# Model evaluation and metrics
+torchmetrics>=0.9.0
+
+# Development and debugging
+jupyter>=1.0.0
+ipython>=8.0.0
+notebook>=6.4.0
+
+# Configuration and logging
+omegaconf>=2.2.0  # For configuration management
+loguru>=0.6.0     # Better logging
+
+# HTTP requests (for data download)
+requests>=2.28.0
