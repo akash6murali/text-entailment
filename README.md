@@ -13,7 +13,7 @@ This project addresses the Natural Language Inference (NLI) task, also known as 
 ## 🏗️ Project Architecture
 
 ```
-text_entailment_cursor/
+text_entailment/
 ├── code/                           # Main source code
 │   ├── main.py                     # Entry point and orchestration
 │   ├── text_entailment__util/      # Core utility modules
@@ -78,7 +78,7 @@ text_entailment_cursor/
 
 ```bash
 git clone <repository-url>
-cd text_entailment_cursor
+cd text_entailment
 ```
 
 ### 2. Create Virtual Environment (Recommended)
