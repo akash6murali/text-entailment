@@ -21,8 +21,7 @@ text_entailment_cursor/
 │   ├── bert_pretrained.py          # BERT-based models
 │   ├── sentence_bert_similarity.py # Sentence-BERT implementation
 │   ├── bilstm_encoder.py          # BiLSTM with attention
-│   ├── snli_data_explorer.py      # Data exploration and analysis
-│   └── EDA.ipynb                  # Exploratory data analysis notebook
+│   └── snli_data_explorer.py      # Data exploration and analysis
 ├── data/                           # Data storage
 │   ├── input_data/                 # Raw input datasets
 │   └── process_data/               # Preprocessed data
