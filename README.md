@@ -2,7 +2,7 @@
 
 A comprehensive machine learning project for text entailment classification, implementing multiple approaches from baseline models to advanced neural architectures.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project addresses the Natural Language Inference (NLI) task, also known as Text Entailment. Given a premise (fact) and a hypothesis, the system predicts whether the hypothesis is:
 
@@ -10,7 +10,7 @@ This project addresses the Natural Language Inference (NLI) task, also known as 
 - **Neutral**: The premise neither supports nor contradicts the hypothesis
 - **Contradiction**: The premise logically contradicts the hypothesis
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```
 text_entailment/
@@ -30,7 +30,7 @@ text_entailment/
 └── requirements.txt                 # Python dependencies
 ```
 
-## 🚀 Features
+## Features
 
 ### 1. **Baseline Models** (`text_entailment__util/baseline_models.py`)
 
@@ -66,13 +66,13 @@ text_entailment/
 - **Data Modeling**: Feature engineering and dataset preparation
 - **Model Evaluation**: Comprehensive metrics and visualizations
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - CUDA-compatible GPU (optional, for faster training)
 - 8GB+ RAM (16GB+ recommended for large datasets)
 
-## 🛠️ Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -103,7 +103,7 @@ pip install -r requirements.txt
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
 ```
 
-## 📊 Data Setup
+## Data Setup
 
 ### SNLI Dataset
 
@@ -125,7 +125,7 @@ Each line in the JSONL file should contain:
 }
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Quick Start
 
@@ -176,7 +176,7 @@ trainer.load_data('path/to/data.jsonl')
 trainer.train()
 ```
 
-## 📈 Model Performance
+## Model Performance
 
 The project includes comprehensive evaluation metrics:
 
@@ -200,7 +200,7 @@ The project includes comprehensive evaluation metrics:
 - **Sequence Length**: Configurable maximum length
 - **Vocabulary Size**: Dynamic based on dataset
 
-## 📝 Logging
+## Logging
 
 The project uses structured logging with:
 
@@ -211,7 +211,7 @@ The project uses structured logging with:
 
 Logs are stored in the `log/` directory with timestamped filenames.
 
-## 🧪 Experimentation
+## Experimentation
 
 ### Jupyter Notebooks
 
@@ -225,7 +225,7 @@ Logs are stored in the `log/` directory with timestamped filenames.
 - Learning rates, batch sizes, and model dimensions are configurable
 - Early stopping and validation splits are implemented
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -241,7 +241,7 @@ Logs are stored in the `log/` directory with timestamped filenames.
 - Monitor memory usage during training
 - Use early stopping to prevent overfitting
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -249,18 +249,18 @@ Logs are stored in the `log/` directory with timestamped filenames.
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Stanford NLP for the SNLI dataset
 - Hugging Face for transformer implementations
 - TensorFlow and PyTorch communities
 - NLTK and scikit-learn developers
 
-## 📞 Support
+## Support
 
 For questions or issues:
 
@@ -270,4 +270,4 @@ For questions or issues:
 
 ---
 
-**Happy Text Entailment Modeling! 🚀**
+**Happy Text Entailment Modeling!**
